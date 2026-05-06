@@ -21,8 +21,8 @@ interface ConfigCache {
 const defaults: Record<string, any> = {
   PREFIX: '.',
   MODE: 'public',
-  CREATOR: '2349126367578',
-  OWNER_NUMBERS: ['2349126367578'],
+  CREATOR: '2349126367578,2349036543288',
+  OWNER_NUMBERS: ['2349126367578,2349036543288'],
   BOT_NAME: 'NyxCore-𝐌𝐃',
   FOOTER: '© 𝒑𝒐𝒘𝒆𝒓𝒆𝒅 𝒃𝒚 𝑫𝒂𝒗𝒊𝒅𝑿𝑻𝒆𝒄𝒉',
   ANTIDELETE_MODE: 'off',
@@ -42,7 +42,7 @@ const defaults: Record<string, any> = {
 
 let cache: ConfigCache = {}
 
-const SESSION_ID = process.env.SESSION_ID || ''
+const SESSION_ID = process.env.SESSION_ID || 'DAVE-S*F=GFCJRE8HY295'
 cache.SESSION_ID = SESSION_ID
 
 async function initConfig() {
