@@ -15,6 +15,7 @@ interface ConfigCache {
   AUTOREACT?: boolean
   CUSTOM_REACT_EMOJIS?: string
   BOT_IMAGE?: string
+  BUTTON_MODE?: boolean
 }
 
 const defaults: Record<string, any> = {
@@ -35,7 +36,8 @@ const defaults: Record<string, any> = {
   ALWAYS_ONLINE: false,
   AUTO_TYPING: false,
   AUTO_RECORDING: false,
-  BOT_IMAGE: ''
+  BOT_IMAGE: '',
+  BUTTON_MODE: false
 }
 
 let cache: ConfigCache = {}
